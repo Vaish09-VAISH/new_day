@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Memories ✨</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Background -->
+<div id="stars"></div>
+
+<div class="memory-container">
+
+    <h1>⭐ Our Constellation of Memories ⭐</h1>
+
+    <p>
+        Every star holds a memory.
+        Tap each one to discover it.
+    </p>
+
+    <!-- Stars -->
+    <div class="sky">
+
+        <div class="star" onclick="showMemory(1)">⭐</div>
+        <div class="star" onclick="showMemory(2)">⭐</div>
+        <div class="star" onclick="showMemory(3)">⭐</div>
+        <div class="star" onclick="showMemory(4)">⭐</div>
+        <div class="star" onclick="showMemory(5)">⭐</div>
+
+    </div>
+
+</div>
+
+<!-- Memory Popup -->
+<div id="memoryPopup" class="popup">
+
+    <div class="popup-content">
+
+        <span class="close" onclick="closePopup()">&times;</span>
+
+        <img id="memoryImage" src="" alt="Memory">
+
+        <h2 id="memoryTitle"></h2>
+
+        <p id="memoryText"></p>
+
+    </div>
+
+</div>
+
+<!-- Final Hidden Star -->
+<div id="finalStar" style="display:none;">
+
+    <h2>✨ One Last Memory Awaits...</h2>
+
+    <button onclick="location.href='gallery.html'">
+
+        Reveal Final Surprise ❤️
+
+    </button>
+
+</div>
+
+<script src="js/stars.js"></script>
+
+</body>
+</html>

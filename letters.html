@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Open When... 💌</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div id="stars"></div>
+
+<div class="letters-container">
+
+<h1>💌 Open When...</h1>
+
+<p>
+Sometimes, words can be there when people can't.
+Choose an envelope whenever you need it.
+</p>
+
+<div class="letters-grid">
+
+    <div class="letter-card" onclick="openLetter(1)">
+        💙
+        <h3>Open When You're Sad</h3>
+    </div>
+
+    <div class="letter-card" onclick="openLetter(2)">
+        😂
+        <h3>Open When You Need A Smile</h3>
+    </div>
+
+    <div class="letter-card" onclick="openLetter(3)">
+        🌸
+        <h3>Open When You Miss Me</h3>
+    </div>
+
+    <div class="letter-card" onclick="openLetter(4)">
+        ⭐
+        <h3>Open When You Need Motivation</h3>
+    </div>
+
+    <div class="letter-card" onclick="openLetter(5)">
+        ❤️
+        <h3>Open Anytime</h3>
+    </div>
+
+</div>
+
+</div>
+
+<!-- Popup -->
+
+<div id="popup" class="popup">
+
+<div class="popup-content">
+
+<span class="close" onclick="closeLetter()">&times;</span>
+
+<h2 id="letterTitle"></h2>
+
+<p id="letterText"></p>
+
+</div>
+
+</div>
+
+<br><br>
+
+<div style="text-align:center; margin-bottom:40px;">
+
+<button onclick="location.href='cake.html'">
+
+Continue 🎂
+
+</button>
+
+</div>
+
+<script src="js/letters.js"></script>
+</body>
+</html>

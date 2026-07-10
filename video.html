@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Special Gift For You 🎁</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Background -->
+<div id="stars"></div>
+
+<div class="video-container">
+
+    <h1>🎁 A Little Surprise For You</h1>
+
+    <p>
+        I couldn't hand you a gift in person...
+        <br><br>
+        So here's something made with lots of love.
+    </p>
+
+    <!-- Gift Box -->
+    <div id="giftBox" onclick="openGift()">
+
+        <img src="images/gift.png" alt="Gift Box" width="220">
+
+        <h2>Tap the Gift to Open ❤️</h2>
+
+    </div>
+
+    <!-- Hidden Video -->
+    <div id="videoSection" style="display:none;">
+
+        <video id="birthdayVideo"
+               width="90%"
+               controls>
+
+            <source src="videos/birthday.mp4" type="video/mp4">
+
+            Your browser doesn't support video.
+
+        </video>
+
+        <br><br>
+
+        <p>
+            I hope this made you smile 😊
+        </p>
+
+        <button onclick="location.href='letters.html'">
+
+            One More Surprise 💌
+
+        </button>
+
+    </div>
+
+</div>
+
+<script src="js/video.js"></script>
+</body>
+</html>
