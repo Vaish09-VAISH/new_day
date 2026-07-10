@@ -1,0 +1,1680 @@
+/* ==========================================
+   GOOGLE FONTS
+========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@700&display=swap');
+
+
+/* ==========================================
+   RESET
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+    overflow-x:hidden;
+    min-height:100vh;
+
+    color:white;
+
+    background:linear-gradient(
+        135deg,
+        #0f172a,
+        #1e293b,
+        #312e81,
+        #4c1d95
+    );
+
+}
+
+
+/* ==========================================
+   STARRY BACKGROUND
+========================================== */
+
+#stars{
+
+    position:fixed;
+
+    width:100%;
+    height:100%;
+
+    top:0;
+    left:0;
+
+    z-index:-2;
+
+    background-image:
+
+    radial-gradient(white 1px,transparent 1px),
+    radial-gradient(white 1px,transparent 1px);
+
+    background-size:80px 80px;
+
+    background-position:0 0,40px 40px;
+
+    animation:starsMove 80s linear infinite;
+
+}
+
+@keyframes starsMove{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+100%{
+
+transform:translateY(-300px);
+
+}
+
+}
+
+
+/* ==========================================
+   FLOATING HEARTS
+========================================== */
+
+.hearts{
+
+position:fixed;
+
+width:100%;
+height:100%;
+
+overflow:hidden;
+
+pointer-events:none;
+
+z-index:-1;
+
+}
+
+.hearts span{
+
+position:absolute;
+
+bottom:-50px;
+
+font-size:24px;
+
+animation:floatHearts 12s linear infinite;
+
+opacity:0.7;
+
+}
+
+.hearts span:nth-child(1){
+
+left:10%;
+
+animation-delay:0s;
+
+}
+
+.hearts span:nth-child(2){
+
+left:30%;
+
+animation-delay:3s;
+
+}
+
+.hearts span:nth-child(3){
+
+left:50%;
+
+animation-delay:5s;
+
+}
+
+.hearts span:nth-child(4){
+
+left:70%;
+
+animation-delay:7s;
+
+}
+
+.hearts span:nth-child(5){
+
+left:90%;
+
+animation-delay:9s;
+
+}
+
+@keyframes floatHearts{
+
+0%{
+
+transform:translateY(0) scale(0.8);
+
+opacity:0;
+
+}
+
+20%{
+
+opacity:0.8;
+
+}
+
+100%{
+
+transform:translateY(-110vh) scale(1.4);
+
+opacity:0;
+
+}
+
+}
+
+
+/* ==========================================
+   LOADER
+========================================== */
+
+#loader{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:100vh;
+
+background:#050816;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:2rem;
+
+font-weight:600;
+
+z-index:9999;
+
+animation:fadeLoader 3s forwards;
+
+}
+
+@keyframes fadeLoader{
+
+0%{
+
+opacity:1;
+
+}
+
+85%{
+
+opacity:1;
+
+}
+
+100%{
+
+opacity:0;
+
+visibility:hidden;
+
+}
+
+}
+
+
+/* ==========================================
+   MAIN CONTAINER
+========================================== */
+
+.container{
+
+width:90%;
+
+max-width:800px;
+
+margin:auto;
+
+padding-top:120px;
+
+text-align:center;
+
+animation:fadeUp 2s;
+
+}
+
+.container h2{
+
+font-size:2rem;
+
+font-family:'Dancing Script',cursive;
+
+color:#ffd166;
+
+margin-bottom:15px;
+
+}
+
+.container h1{
+
+font-size:3.2rem;
+
+margin-bottom:25px;
+
+}
+
+.container p{
+
+font-size:1.2rem;
+
+line-height:2;
+
+margin-bottom:40px;
+
+color:#eeeeee;
+
+}
+
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+button{
+
+padding:15px 35px;
+
+font-size:18px;
+
+border:none;
+
+border-radius:50px;
+
+cursor:pointer;
+
+background:linear-gradient(45deg,#ff5fa2,#ff9f68);
+
+color:white;
+
+font-weight:bold;
+
+transition:.4s;
+
+box-shadow:0 8px 25px rgba(255,105,180,.4);
+
+}
+
+button:hover{
+
+transform:translateY(-5px) scale(1.05);
+
+box-shadow:0 15px 35px rgba(255,105,180,.6);
+
+}
+
+
+/* ==========================================
+   MUSIC BUTTON
+========================================== */
+
+#musicBtn{
+
+position:fixed;
+
+bottom:25px;
+
+right:25px;
+
+width:60px;
+
+height:60px;
+
+border-radius:50%;
+
+font-size:24px;
+
+}
+
+
+/* ==========================================
+   ANIMATIONS
+========================================== */
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(60px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:768px){
+
+.container{
+
+padding-top:90px;
+
+}
+
+.container h1{
+
+font-size:2.2rem;
+
+}
+
+.container h2{
+
+font-size:1.6rem;
+
+}
+
+.container p{
+
+font-size:1rem;
+
+line-height:1.8;
+
+}
+
+button{
+
+width:90%;
+
+font-size:17px;
+
+}
+
+}
+/* ==========================================
+   MEMORIES PAGE
+========================================== */
+
+.memory-container{
+
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:60px 20px;
+    text-align:center;
+
+}
+
+.memory-container h1{
+
+    font-size:3rem;
+    color:#FFD166;
+    margin-bottom:20px;
+
+}
+
+.memory-container p{
+
+    color:#eeeeee;
+    font-size:1.2rem;
+    margin-bottom:50px;
+
+}
+
+
+/* ==========================================
+   CONSTELLATION SKY
+========================================== */
+
+.sky{
+
+    position:relative;
+    width:100%;
+    height:500px;
+    margin:auto;
+
+}
+
+
+/* Individual Stars */
+
+.star{
+
+    position:absolute;
+
+    font-size:42px;
+
+    cursor:pointer;
+
+    transition:.4s;
+
+    animation:twinkle 2s infinite alternate;
+
+}
+
+.star:hover{
+
+    transform:scale(1.4) rotate(15deg);
+
+}
+
+
+/* Position each star */
+
+.star:nth-child(1){
+
+    top:40px;
+    left:15%;
+
+}
+
+.star:nth-child(2){
+
+    top:170px;
+    left:65%;
+
+}
+
+.star:nth-child(3){
+
+    top:300px;
+    left:25%;
+
+}
+
+.star:nth-child(4){
+
+    top:100px;
+    left:85%;
+
+}
+
+.star:nth-child(5){
+
+    top:350px;
+    left:75%;
+
+}
+
+
+/* Twinkling Effect */
+
+@keyframes twinkle{
+
+0%{
+
+opacity:.4;
+
+transform:scale(.9);
+
+}
+
+100%{
+
+opacity:1;
+
+transform:scale(1.15);
+
+}
+
+}
+
+
+/* ==========================================
+   MEMORY POPUP
+========================================== */
+
+.popup{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,.75);
+
+    display:none;
+
+    justify-content:center;
+    align-items:center;
+
+    z-index:999;
+
+    padding:20px;
+
+}
+
+.popup-content{
+
+    width:90%;
+    max-width:500px;
+
+    background:rgba(255,255,255,.12);
+
+    backdrop-filter:blur(12px);
+
+    border-radius:20px;
+
+    padding:25px;
+
+    text-align:center;
+
+    color:white;
+
+    animation:popupAnimation .5s;
+
+}
+
+.popup-content img{
+
+    width:100%;
+
+    border-radius:15px;
+
+    margin-bottom:20px;
+
+}
+
+.popup-content h2{
+
+    margin-bottom:15px;
+
+    color:#FFD166;
+
+}
+
+.popup-content p{
+
+    line-height:1.8;
+
+}
+
+
+/* Close Button */
+
+.close{
+
+    float:right;
+
+    font-size:32px;
+
+    cursor:pointer;
+
+    color:white;
+
+}
+
+.close:hover{
+
+    color:#ff7aa2;
+
+}
+
+
+/* Popup Animation */
+
+@keyframes popupAnimation{
+
+from{
+
+opacity:0;
+
+transform:scale(.6);
+
+}
+
+to{
+
+opacity:1;
+
+transform:scale(1);
+
+}
+
+}
+
+
+/* ==========================================
+   FINAL STAR
+========================================== */
+
+#finalStar{
+
+    text-align:center;
+
+    margin:50px auto;
+
+    animation:fadeUp 1.5s;
+
+}
+
+#finalStar h2{
+
+    color:#FFD166;
+
+    margin-bottom:25px;
+
+    font-size:2rem;
+
+}
+
+#finalStar button{
+
+    padding:15px 30px;
+
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:768px){
+
+.memory-container h1{
+
+font-size:2.2rem;
+
+}
+
+.memory-container p{
+
+font-size:1rem;
+
+}
+
+.sky{
+
+height:450px;
+
+}
+
+.star{
+
+font-size:34px;
+
+}
+
+}
+/* ==========================================
+   GALLERY PAGE
+========================================== */
+
+.gallery-container{
+
+    width:90%;
+    max-width:1300px;
+    margin:auto;
+    padding:60px 20px;
+    text-align:center;
+
+}
+
+.gallery-container h1{
+
+    font-size:3rem;
+    color:#FFD166;
+    margin-bottom:20px;
+
+}
+
+.gallery-container p{
+
+    font-size:1.2rem;
+    color:#eeeeee;
+    margin-bottom:50px;
+
+}
+
+
+/* ==========================================
+   PHOTO GRID
+========================================== */
+
+.gallery{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:35px;
+
+    justify-content:center;
+
+}
+
+
+/* ==========================================
+   FLIP CARD
+========================================== */
+
+.flip-card{
+
+    background:transparent;
+
+    width:250px;
+
+    height:330px;
+
+    margin:auto;
+
+    perspective:1200px;
+
+}
+
+.flip-card-inner{
+
+    position:relative;
+
+    width:100%;
+
+    height:100%;
+
+    transition:transform .8s;
+
+    transform-style:preserve-3d;
+
+}
+
+.flip-card:hover .flip-card-inner{
+
+    transform:rotateY(180deg);
+
+}
+
+
+/* ==========================================
+   FRONT & BACK
+========================================== */
+
+.flip-card-front,
+.flip-card-back{
+
+    position:absolute;
+
+    width:100%;
+    height:100%;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    backface-visibility:hidden;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.35);
+
+}
+
+
+/* ==========================================
+   FRONT SIDE
+========================================== */
+
+.flip-card-front{
+
+    background:white;
+
+}
+
+.flip-card-front img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+
+/* ==========================================
+   BACK SIDE
+========================================== */
+
+.flip-card-back{
+
+    transform:rotateY(180deg);
+
+    background:rgba(255,255,255,.12);
+
+    backdrop-filter:blur(15px);
+
+    color:white;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:20px;
+
+}
+
+.flip-card-back h2{
+
+    color:#FFD166;
+
+    margin-bottom:15px;
+
+}
+
+.flip-card-back p{
+
+    line-height:1.8;
+
+}
+
+
+/* ==========================================
+   HOVER EFFECT
+========================================== */
+
+.flip-card:hover{
+
+    transform:translateY(-10px);
+
+    transition:.4s;
+
+}
+
+
+/* ==========================================
+   CONTINUE BUTTON
+========================================== */
+
+.gallery-container button{
+
+    margin-top:50px;
+
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:768px){
+
+.gallery-container h1{
+
+font-size:2.3rem;
+
+}
+
+.gallery-container p{
+
+font-size:1rem;
+
+}
+
+.flip-card{
+
+width:220px;
+
+height:300px;
+
+}
+
+}
+/* ==========================================
+   VIDEO PAGE
+========================================== */
+
+.video-container{
+
+    width:90%;
+    max-width:900px;
+
+    margin:auto;
+
+    padding:60px 20px;
+
+    text-align:center;
+
+    animation:fadeUp 1.5s;
+
+}
+
+.video-container h1{
+
+    font-size:3rem;
+
+    color:#FFD166;
+
+    margin-bottom:20px;
+
+}
+
+.video-container p{
+
+    font-size:1.2rem;
+
+    color:#eeeeee;
+
+    line-height:1.8;
+
+    margin-bottom:35px;
+
+}
+
+
+/* ==========================================
+   GIFT BOX
+========================================== */
+
+#giftBox{
+
+    display:inline-block;
+
+    cursor:pointer;
+
+    transition:.4s;
+
+    animation:giftFloat 3s ease-in-out infinite;
+
+}
+
+#giftBox:hover{
+
+    transform:scale(1.08);
+
+}
+
+#giftBox img{
+
+    width:220px;
+
+    max-width:90%;
+
+    filter:drop-shadow(0 10px 25px rgba(255,182,193,.5));
+
+}
+
+#giftBox h2{
+
+    margin-top:20px;
+
+    color:#ffffff;
+
+    font-size:1.5rem;
+
+}
+
+
+/* Floating Gift Animation */
+
+@keyframes giftFloat{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-12px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
+
+
+/* ==========================================
+   VIDEO SECTION
+========================================== */
+
+#videoSection{
+
+    margin-top:40px;
+
+    animation:fadeUp 1s;
+
+}
+
+#birthdayVideo{
+
+    width:100%;
+
+    max-width:800px;
+
+    border-radius:20px;
+
+    border:4px solid rgba(255,255,255,.15);
+
+    box-shadow:0 12px 35px rgba(0,0,0,.4);
+
+}
+
+
+/* ==========================================
+   VIDEO MESSAGE
+========================================== */
+
+#videoSection p{
+
+    margin-top:25px;
+
+    font-size:1.1rem;
+
+    color:#ffffff;
+
+}
+
+
+/* ==========================================
+   CONTINUE BUTTON
+========================================== */
+
+#videoSection button{
+
+    margin-top:30px;
+
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:768px){
+
+.video-container h1{
+
+font-size:2.2rem;
+
+}
+
+.video-container p{
+
+font-size:1rem;
+
+}
+
+#giftBox img{
+
+width:170px;
+
+}
+
+#giftBox h2{
+
+font-size:1.2rem;
+
+}
+
+}
+/* ==========================================
+   LETTERS PAGE
+========================================== */
+
+.letters-container{
+
+    width:90%;
+    max-width:1200px;
+
+    margin:auto;
+
+    padding:60px 20px;
+
+    text-align:center;
+
+    animation:fadeUp 1.5s;
+
+}
+
+.letters-container h1{
+
+    font-size:3rem;
+
+    color:#FFD166;
+
+    margin-bottom:20px;
+
+}
+
+.letters-container p{
+
+    color:#eeeeee;
+
+    font-size:1.2rem;
+
+    margin-bottom:45px;
+
+    line-height:1.8;
+
+}
+
+
+/* ==========================================
+   LETTER GRID
+========================================== */
+
+.letters-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:30px;
+
+}
+
+
+/* ==========================================
+   LETTER CARD
+========================================== */
+
+.letter-card{
+
+    background:rgba(255,255,255,.10);
+
+    backdrop-filter:blur(12px);
+
+    border-radius:20px;
+
+    padding:35px 20px;
+
+    cursor:pointer;
+
+    transition:.4s;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.30);
+
+    color:white;
+
+}
+
+.letter-card:hover{
+
+    transform:translateY(-10px) scale(1.03);
+
+    background:rgba(255,255,255,.18);
+
+}
+
+.letter-card{
+
+    font-size:45px;
+
+}
+
+.letter-card h3{
+
+    margin-top:15px;
+
+    font-size:1.2rem;
+
+    color:#FFD166;
+
+}
+
+
+/* ==========================================
+   LETTER POPUP
+========================================== */
+
+#popup{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100%;
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:rgba(0,0,0,.75);
+
+    z-index:9999;
+
+    padding:20px;
+
+}
+
+.popup-content{
+
+    width:90%;
+
+    max-width:600px;
+
+    background:rgba(255,255,255,.12);
+
+    backdrop-filter:blur(20px);
+
+    border-radius:25px;
+
+    padding:30px;
+
+    color:white;
+
+    animation:popupAnimation .5s;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.4);
+
+}
+
+.popup-content h2{
+
+    color:#FFD166;
+
+    margin-bottom:20px;
+
+    text-align:center;
+
+}
+
+.popup-content p{
+
+    line-height:2;
+
+    white-space:pre-line;
+
+    text-align:left;
+
+    font-size:1rem;
+
+}
+
+.close{
+
+    float:right;
+
+    font-size:32px;
+
+    cursor:pointer;
+
+    color:white;
+
+    transition:.3s;
+
+}
+
+.close:hover{
+
+    color:#ff7aa2;
+
+}
+
+
+/* ==========================================
+   LETTER BUTTON
+========================================== */
+
+.letters-container button{
+
+    margin-top:40px;
+
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:768px){
+
+.letters-container h1{
+
+font-size:2.2rem;
+
+}
+
+.letters-container p{
+
+font-size:1rem;
+
+}
+
+.letter-card{
+
+padding:25px 15px;
+
+}
+
+.letter-card h3{
+
+font-size:1rem;
+
+}
+
+.popup-content{
+
+padding:20px;
+
+}
+
+.popup-content p{
+
+font-size:.95rem;
+
+line-height:1.8;
+
+}
+
+}
+/* ==========================================
+   CAKE PAGE
+========================================== */
+
+.cake-container{
+
+    width:90%;
+    max-width:900px;
+
+    margin:auto;
+
+    padding:60px 20px;
+
+    text-align:center;
+
+    animation:fadeUp 1.5s;
+
+}
+
+.cake-container h1{
+
+    font-size:3rem;
+
+    color:#FFD166;
+
+    margin-bottom:20px;
+
+}
+
+.cake-container p{
+
+    color:#eeeeee;
+
+    font-size:1.2rem;
+
+    margin-bottom:35px;
+
+}
+
+.cake{
+
+    font-size:180px;
+
+    cursor:pointer;
+
+    transition:.5s;
+
+    animation:cakeBounce 2s infinite;
+
+}
+
+.cake:hover{
+
+    transform:scale(1.08);
+
+}
+
+@keyframes cakeBounce{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-12px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
+
+/* ==========================================
+   CONFETTI
+========================================== */
+
+.confetti{
+
+position:fixed;
+
+width:10px;
+
+height:10px;
+
+background:#FFD166;
+
+animation:confettiFall 4s linear infinite;
+
+}
+
+@keyframes confettiFall{
+
+0%{
+
+transform:translateY(-100vh) rotate(0deg);
+
+opacity:1;
+
+}
+
+100%{
+
+transform:translateY(100vh) rotate(720deg);
+
+opacity:0;
+
+}
+
+}
+
+/* ==========================================
+   FINAL LETTER
+========================================== */
+
+.final-container{
+
+width:90%;
+
+max-width:900px;
+
+margin:auto;
+
+padding:80px 20px;
+
+text-align:center;
+
+animation:fadeUp 2s;
+
+}
+
+.final-container h1{
+
+font-size:3rem;
+
+color:#FFD166;
+
+margin-bottom:30px;
+
+}
+
+.final-container p{
+
+font-size:1.2rem;
+
+line-height:2;
+
+color:#eeeeee;
+
+margin-bottom:40px;
+
+}
+
+.signature{
+
+font-family:'Dancing Script',cursive;
+
+font-size:2rem;
+
+color:#FFD166;
+
+margin-top:40px;
+
+}
+
+/* ==========================================
+   TIME CAPSULE
+========================================== */
+
+.capsule-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:30px;
+
+margin-top:50px;
+
+}
+
+.capsule{
+
+background:rgba(255,255,255,.12);
+
+backdrop-filter:blur(15px);
+
+padding:25px;
+
+border-radius:20px;
+
+transition:.4s;
+
+cursor:pointer;
+
+}
+
+.capsule:hover{
+
+transform:translateY(-10px);
+
+background:rgba(255,255,255,.20);
+
+}
+
+.capsule h3{
+
+color:#FFD166;
+
+margin-bottom:15px;
+
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+footer{
+
+text-align:center;
+
+padding:40px 20px;
+
+color:#cccccc;
+
+font-size:.95rem;
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:768px){
+
+.cake{
+
+font-size:120px;
+
+}
+
+.cake-container h1{
+
+font-size:2.2rem;
+
+}
+
+.final-container h1{
+
+font-size:2.2rem;
+
+}
+
+.final-container p{
+
+font-size:1rem;
+
+line-height:1.8;
+
+}
+
+.signature{
+
+font-size:1.6rem;
+
+}
+
+}
