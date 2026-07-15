@@ -6,35 +6,20 @@
 
 const letters = [
 
-{
-title:"💙 Open When You're Sad",
-text:`Remember...
-
-Bad days don't last forever.
-
-You are much stronger than you think.
-
-Whenever life feels difficult,
-please remember there is always
-someone who believes in you.
-
-Take a deep breath.
-
-Smile.
-
-Everything will be alright. ❤️`
-},
+,
 
 {
 title:"😂 Open When You Need A Smile",
 text:`Hey!
 
-If you're reading this,
-
-I'm officially trying to make you smile.
-
-Remember all the silly moments
-we laughed until our stomachs hurt?
+hee school alli eshtu vishya agide
+* Samarth mummy vishya nenpisko
+* sister teresa torture na nenpisko....
+* nam house jagala,sports day journey...
+* gautham hendthi joke nenpisko...
+* namdu sibili du takraru....
+* vinutha ma'am nan bogidakke regsiddu...
+ennu heladashtu ede.............
 
 Now smile...
 
@@ -42,56 +27,16 @@ Mission accomplished? 😄`
 },
 
 {
-title:"🌸 Open When You Miss Me",
-text:`Distance only separates places.
+title:"⭐ Open When You Need to laugh",
+text: `
 
-Never hearts.
+R u pencil by any chance
+think na....
+because you are looking like an apsara. 
 
-Whenever you miss me,
-
-look at the sky,
-
-listen to your favorite song,
-
-or simply remember our memories.
-
-I'll always be there for you. ❤️`
+engide nan line....?🌟`
 },
 
-{
-title:"⭐ Open When You Need Motivation",
-text:`Don't underestimate yourself.
-
-You've already overcome so many things.
-
-Keep believing.
-
-Keep smiling.
-
-Keep moving forward.
-
-I know you'll achieve everything
-you dream of.
-
-I'm always cheering for you. 🌟`
-},
-
-{
-title:"❤️ Open Anytime",
-text:`Happy Birthday!
-
-Thank you for being such an amazing person.
-
-Thank you for every laugh,
-every conversation,
-every memory,
-and every moment.
-
-May your life always be filled
-with happiness and love.
-
-You truly deserve it. ❤️`
-}
 
 ];
 

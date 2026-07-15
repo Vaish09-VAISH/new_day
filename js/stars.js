@@ -8,9 +8,9 @@ const memories = [
 
 title:"Our First Memory ❤️",
 
-image:"images/memory1.jpg",
+image:"images/music/memories1.jpeg",
 
-text:"Write your first beautiful memory here."
+text:"our first memory here."
 
 },
 
@@ -18,7 +18,7 @@ text:"Write your first beautiful memory here."
 
 title:"The Funniest Day 😂",
 
-image:"images/memory2.jpg",
+image:"images/music/memories3.jpeg",
 
 text:"Describe one funny incident you both still laugh about."
 
@@ -28,7 +28,7 @@ text:"Describe one funny incident you both still laugh about."
 
 title:"A Special Moment 🌸",
 
-image:"images/memory3.jpg",
+image:"images/music/memories4.jpeg",
 
 text:"Write another unforgettable memory."
 
@@ -38,7 +38,7 @@ text:"Write another unforgettable memory."
 
 title:"Thank You 💖",
 
-image:"images/memory4.jpg",
+image:"images/music/memories2.jpeg",
 
 text:"Tell her why she means so much to you."
 
@@ -48,7 +48,7 @@ text:"Tell her why she means so much to you."
 
 title:"Forever Friends ✨",
 
-image:"images/memory5.jpg",
+image:"images/music/memories6.jpeg",
 
 text:"Write your heartfelt birthday message."
 
